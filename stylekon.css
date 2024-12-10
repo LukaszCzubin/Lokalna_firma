@@ -1,0 +1,74 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body,
+html {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+main {
+    width: 500px;
+    height: 98vh;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px black solid;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container input[type="text"],
+.container input[type="number"],
+.container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.container input[type="text"]:focus,
+.container input[type="number"]:focus,
+.container input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+#wyslij {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#wyslij:hover {
+    background-color: #0056b3;
+}
+
+.div1, .div2, .div3, .div4 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
