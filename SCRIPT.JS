@@ -55,7 +55,7 @@ function pokazProdukt() {
                     <h3>${product.name}</h3>
                     <p>Cena: ${product.cena} zł</p>
                     <p>
-                        <span class="heart" onclick="increaseHearts(${i})"><img src="heart.png" width="20px" height="20px"></span>
+                        <span class="heart" onclick="zwiekszSerca(${i})"><img src="heart.png" width="20px" height="20px"></span>
                         <span id="hearts-${i}">${product.serca}</span>
                     </p>
                 `;

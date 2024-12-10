@@ -1,53 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formularz</title>
-    <link rel="stylesheet" href="STYLEKON.CSS">
-    <script src="SCRIPTKON.JS"></script>
+    <title>Lokalna strona małej firmy</title>
+    <link rel="stylesheet" href="stylekon.css">
 </head>
-
 <body>
-    <div class="Dzieci">
 
+    <div class="Form">
+        <div class="main">
+        <input type="text" class="short" placeholder="Imie" id="imie"> <input type="text" class="short" placeholder="Nazwisko" id="nazwisko">
+        <input type="tel" class="long" maxlength="9" placeholder="Numer telefonu" id="Numer">
+        <input type="email" class="long" placeholder="Adres e-mail" id="email">
+        <input type="text" class="long" placeholder="Pesel" maxlength="11" id="pesel"> 
+        <input type="button" class="button" value="WYŚLIJ" onclick="formularz()">
+        </div>
     </div>
-    <main>
-        <form class="container" id="form">
-            <div class="div1">
-                <div style="display: flex;">
-                    <h4>Imie</h4>
-                    <h4 style="margin-left: 200px;">Nazwisko</h4>
-                </div>
-                <div style="display: flex;">
-                    <input type="text" style="width: 45%; margin-right: 10px;" id="Imie">
-                    <input type="text" style="width: 50%; margin-left: 10px;" id="Nazwisko">
-                </div>
-            </div>
-            <div class="div2">
-                <dvi>
-                    <h4></h4>
-                    <h4 style="margin-left: 90px;"></h4>
-                    <h4 style="margin-left: 90px;"></h4>
-                </dvi>
-                <dvi></dvi>
-                <h4>Numer telefonu</h4>
-                <input type="number" id="telefon">
-                <h4>E-mail</h4>
-                <input type="text" id="mail">
-            </div>
-            <div class="div3">
-                <h4>Wiadomość</h4>
-                <input type="text" id="message">
-            </div>
-            <div class="div4">
-                <input type="button" value="Wyślij" id="wyslij" onclick="sprawdzForm()">
-            </div>
-        </form>
-    </main>
-
+    
+    <script src="SCRIPTKON.JS"></script>
 </body>
-
 </html>
- 

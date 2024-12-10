@@ -1,37 +1,51 @@
-var mail = document.getElementById("mail");
-var tel = document.getElementById("telefon");
-var wyslij = document.getElementById("wyslij");
+function formularz(){
+    let imie = document.getElementById("imie").value;
+    let nazwisko = document.getElementById("nazwisko").value;
+    let numer = document.getElementById("Numer").value; 
+    let email = document.getElementById("email").value;
+    let pesel = document.getElementById("pesel").value;
 
-function sprawdzForm() {
-    if (tel.value.length == 9) {
+    if (imie == "") {
+        alert("Imie nie zostało podane");
+        return;
     }
-    else {
-        alert("Nieprawidłowy numer telefonu");
-    };
-    if (mail.value.includes("@") && mail.value.includes(".")) {
-    } else {
-        alert("Nieprawidłowy email");
-    };
 
-    if (tel.value.length == 0) {
-        alert("Nie podałeś/aś numeru telefonu");
-    };
-    if (mail.value.length = 0) {
-        alert("Nie podałeś/aś maila");
-    };
-    if (Imie.value.length == 0) {
-        alert("Nie podałeś/aś Imienia");
-    };
-    if (Nazwisko.value.length == 0) {
-        alert("Nie podałeś/aś Nazwiska");
-    };
-    if (tel.value.length == 9 && mail.value.includes("@") && mail.value.includes(".")) {
-        name = document.getElementById('Imie').value;
-        last = document.getElementById('Nazwisko').value;
-        email = document.getElementById('mail').value;
-        mess = document.getElementById("message").value;
-        console.log("Imie: " + name + " - Nazwisko: " + last + " - E-mail: " + email);
-        console.log("Wiadomość: " + mess);
-        form.reset();
+    if (nazwisko === "") {
+        alert("Nazwisko nie zostało podane");
+        return;
     }
+    if (numer === "") {
+        alert("Numer telefonu nie został podany");
+        return;
+    }
+
+    if (numer.length !== 9) {
+        alert("Numer telefonu musi mieć 9 cyfr");
+        return;
+    }
+
+    if (email === "") {
+        alert("Adres e-mail nie zostało podane");
+        return;
+    }
+
+    if (pesel === "") {
+        alert("Pesel nie zostało podane");
+        return;
+    }
+    if (pesel.length !== 11) {
+        alert("Pesel musi mieć 11 cyfr");
+        return;
+    }
+
+
+
+    alert("Formularz został wysłany!");
+
+    document.getElementById("imie").value = "";
+    document.getElementById("nazwisko").value = "";
+    document.getElementById("Numer").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("pesel").value = "";
+
 }
