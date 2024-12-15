@@ -1,6 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokalna strona małej firmy</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +30,7 @@
             <li><a href="#">Produkty</a></li>
             <li><a href="#">O nas</a></li>
             <li><a href="#">Kontakt</a></li>
+            <li><a href="#" id="themeToggle"><img src="night-mode.png" alt="" width="30px"></a></li>
         </ul>
     </nav>
     <div class="container">
@@ -102,31 +111,88 @@
             <p>Nasze najpopularniejsze produkty</p>
         </div>
         <div class="gallery">
-        <button class="arrow left" onclick="moveLeft()">&#10094;</button>
-        <div class="products" id="productContainer">
+            <button class="arrow left" onclick="moveLeft()">&#10094;</button>
+            <div class="products" id="productContainer">
+            </div>
+            <button class="arrow right" onclick="moveRight()">&#10095;</button>
         </div>
-        <button class="arrow right" onclick="moveRight()">&#10095;</button>
-    </div> 
     </div>
-   <div class="owoce">
-    <div class="headline">
-        <p>
-            Poznaj linie kosmetyczne
-        </p>
-    </div>
-    <div class="card_container">
-     <div class="card">
-        <div class="fruit">
-            <img src="how-to-cut-a-pomegranate-recipe.jpg" alt="" width="400px" height="400px">
+    <div class="owoce">
+        <div class="headline">
+            <p>
+                Poznaj linie kosmetyczne
+            </p>
         </div>
-        <div class="opis">
-            <p>Fitohomonalna terapia skóry w okresie menopauzalnym</p>
+        <div class="card_container">
+            <div class="card">
+                <div class="fruit">
+                    <img src="how-to-cut-a-pomegranate-recipe.jpg" alt="Opis 1" width="300px" height="300px">
+                </div>
+                <div class="opis">
+                    <p>MenoShe Harmony</p>
+                    <button class="more-btn" onclick="toggleText(this)">Zobacz więcej</button>
+                    <div class="extra-text" style="display: none;">
+                    Fitohomonalna terapia skóry w okresie menopauzalnym
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="fruit">
+                    <img src="kapusta.webp" alt="Opis 1" width="300px" height="300px">
+                </div>
+                <div class="opis">
+                    <p>Vit U Line</p>
+                    <button class="more-btn" onclick="toggleText(this)">Zobacz więcej</button>
+                    <div class="extra-text" style="display: none;">
+                        Łagodzenie i regeneracja cery naczynkowej
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="fruit">
+                    <img src="1385-2.jpg" alt="Opis 1" width="300px" height="300px">
+                </div>
+                <div class="opis">
+                    <p>Sensi Peptide Line</p>
+                    <button class="more-btn" onclick="toggleText(this)">Zobacz więcej</button>
+                    <div class="extra-text" style="display: none;">
+                        Intensywne wiciszenie skóry wrażliwej
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="fruit">
+                    <img src="what-is-caviar.jpg" alt="Opis 1" width="300px" height="300px">
+                </div>
+                <div class="opis">
+                    <p>Cawiar & Matrix Line</p>
+                    <button class="more-btn" onclick="toggleText(this)">Zobacz więcej</button>
+                    <div class="extra-text" style="display: none;">
+                       linia z kawiorem do skóry dojrzałej i wrażliwej
+                    </div>
+                </div>
+            </div>
         </div>
-     </div>    
-    </div>
-   
-   </div>
-    <script src="SCRIPT.JS"></script>
+        <footer>
+            <div class="footer-content">
+                <h3>Zielona Przystań</h3>
+                <p>Dbamy o Twoje zdrowie i urodę w sposób przyjazny dla Ciebie i dla planety.</p>
+               <p>ZAPISZ SIĘ NA NASZEGO NEWSLETTERA!</p>
+                <form id="subscriptionForm" onsubmit="handleSubscription(event)">
+                    <input type="email" id="emailInput" placeholder="Twój e-mail" required>
+                    <button type="submit">Subskrybuj</button>
+                </form>
+                <ul class="socials">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Zielona Przystań. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </footer>
+        <script src="SCRIPT.JS"></script>
 </body>
 
 </html>

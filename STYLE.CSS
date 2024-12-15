@@ -7,11 +7,22 @@
     list-style: none;
     font-family: "Quicksand", sans-serif;
 }
-
+body{
+    background-color: white;
+    color: black;
+}
+body.dark-theme {
+    background-color: #333;
+    color: white;
+}
 nav {
     background: #ffffff;
     height: 80px;
     width: 100%;
+}
+nav.dark-theme {
+    background: #222;
+    color: white;
 }
 
 label.logo {
@@ -40,6 +51,9 @@ nav ul li a {
     text-transform: uppercase;
     padding: 30px 33px;
     border-radius: 3px;
+}
+nav.dark-theme ul li a {
+    color: white;
 }
 
 a .active,
@@ -104,7 +118,7 @@ a:hover {
   
     width: 100%;
     position: absolute;
-    bottom: 380px;
+    bottom: 180px;
     right: 30px;
     display: flex;
     justify-content: flex-end;
@@ -128,6 +142,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     margin: 50px 0;
+    
 }
 .item p, h2{
     text-decoration: none;
@@ -140,6 +155,8 @@ a:hover {
     margin: 15px;
     box-sizing: border-box;
     float: left;
+    border-radius: 20px;
+    padding: 10px;
     text-align: center;
     cursor: pointer;
     background: white;
@@ -163,6 +180,7 @@ justify-content: center;
 padding: 40px;
 }
 .text{
+   
     display: flex;
     flex-direction: column;
    padding: 30px;
@@ -170,6 +188,7 @@ padding: 40px;
     text-wrap: wrap;
     font-size: 20px;
 }
+
 .upper p{
     font-size: 50px;
     font-weight: 900;
@@ -227,6 +246,9 @@ padding: 40px;
 margin-top: 50px;
 background-color: rgb(241, 241, 241);
 }
+.produkty.dark-theme{
+    background-color: #333;
+}
 .teksty {
     width: 40%;
     padding: 30px;
@@ -234,15 +256,40 @@ background-color: rgb(241, 241, 241);
     justify-content: center;
     font-weight: 900;
 }
+.teksty.dark-theme{
+    color: white;
+}
 .card_container{
     width: 100%;
+  
     display: flex;
+    text-align: center;
     flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(172, 199, 177);
 }
 .card{
+    padding: 10px;
     width: 20%;
     display: flex;
+    margin: 10px;
     flex-direction: column;
+}
+.card img{
+    border-radius: 20px;
+}
+.opis p{
+    font-weight: 900;
+    font-size: 20px;
+}
+.opis button{
+    padding: 20px;
+   border: 0;
+   background-color: transparent;
+   cursor: pointer;
+   font-style: italic;
+   text-decoration: underline;
+   font-size: 16px;
 }
 .headline p{
     text-align: center;
@@ -250,8 +297,72 @@ background-color: rgb(241, 241, 241);
     font-size: 50px;
     font-weight: 900;
 }
-.card p{
-    
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer.dark-theme {
+    background-color: #222;
+}
+.footer-content {
+    margin-bottom: 10px;
+}
+
+.footer-content h3 {
+    margin: 0;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+}
+footer .socials a {
+    color: white;
+}
+.socials li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.socials a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+#subscriptionForm{
+    padding: 20px;
+    margin: 10px;
+}
+#subscriptionForm button{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    border: black;
+}
+#subscriptionForm input{
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    border: black;
+}
+#subscriptionForm button:hover{
+    background-color: rgb(212, 212, 212);
 }
 @media screen and (max-width: 858px){
 
