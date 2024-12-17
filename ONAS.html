@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+    <link rel="stylesheet" href="STYLEONAS.CSS">
+    <script src="SCRIPTONAS.JS"></script>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars" area-hidden="true"> </i>
+        </label>
+        <label class="logo"><img src="Zrzut_ekranu_2024-12-03_075332-removebg-preview (1).png" alt="" width="29%">
+        </label>
+        <ul>
+            <li><a href="#">Produkty</a></li>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="KONTAKT.HTML">Kontakt</a></li>
+            <li><a href="#" id="themeToggle"><img src="night-mode.png" alt="" width="30px"></a></li>
+        </ul>
+    </nav>
+    <div class="spot_1">
+        <div class="ad">
+            <img src="Kacper.jpg" alt="">
+        </div>
+        <div class="text">
+            <div class="upper">
+                <p>Kacper Mańka</p>
+            </div>
+            <br>
+            <div class="down">
+                <div class="opis">
+                    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum impedit sint aperiam magnam maiores eos sequi aliquam aliquid recusandae?</h2>
+                    <button class="more-btn" onclick="toggleText(this)">Pokaż więcej</button>
+                    <div class="extra-text" style="display: none;">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quod tempora. Excepturi hic voluptatum veritatis qui sint voluptates enim quam aliquid quos. Est minus debitis atque rem alias enim magni. Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spot_1">
+        <div class="text">
+            <div class="upper">
+                <p>Łukasz czubin</p>
+            </div>
+            <br>
+            <div class="down">
+                <div class="opis">
+                    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum impedit sint aperiam magnam maiores eos sequi aliquam aliquid recusandae?</h2>
+                    <button class="more-btn" onclick="toggleText(this)">Pokaż więcej</button>
+                    <div class="extra-text" style="display: none;">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quod tempora. Excepturi hic voluptatum veritatis qui sint voluptates enim quam aliquid quos. Est minus debitis atque rem alias enim magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sint modi aperiam eius ut qui officia rem? Debitis dolorum doloribus in consequuntur molestiae, voluptatibus blanditiis repudiandae iure, eaque maiores sint.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ad">
+            <img src="Lukasz.jpg" alt="">
+        </div>
+    </div>
+    <div class="spot_1">
+        <div class="ad">
+            <img src="Daniel.jpg" alt="">
+        </div>
+        <div class="text">
+            <div class="upper">
+                <p>Daniel Szyguła</p>
+            </div>
+            <br>
+            <div class="down">
+                <div class="opis">
+                    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum impedit sint aperiam magnam maiores eos sequi aliquam aliquid recusandae?</h2>
+                    <button class="more-btn" onclick="toggleText(this)">Pokaż więcej</button>
+                    <div class="extra-text" style="display: none;">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quod tempora. Excepturi hic voluptatum veritatis qui sint voluptates enim quam aliquid quos. Est minus debitis atque rem alias enim magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sint modi aperiam eius ut qui officia rem? Debitis dolorum doloribus in consequuntur molestiae, voluptatibus blanditiis repudiandae iure, eaque maiores sint.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <h3>Zielona Przystań</h3>
+            <p>Dbamy o Twoje zdrowie i urodę w sposób przyjazny dla Ciebie i dla planety.</p>
+           <p>ZAPISZ SIĘ NA NASZEGO NEWSLETTERA!</p>
+            <form id="subscriptionForm" onsubmit="handleSubscription(event)">
+                <input type="email" id="emailInput" placeholder="Twój e-mail" required>
+                <button type="submit">Subskrybuj</button>
+            </form>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Zielona Przystań. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -27,7 +27,7 @@ function updateProgressBars() {
 }
 
 setInterval(() => {
-    showSlide(currentIndex + 1);
+    pokazSlide(currentIndex + 1);
 }, 10000);
 
 pokazSlide(currentIndex);
@@ -55,7 +55,7 @@ function pokazProdukt() {
                     <h3>${product.name}</h3>
                     <p>Cena: ${product.cena} zł</p>
                     <p>
-                        <span class="heart" onclick="zwiekszSerca(${i})"><img src="heart.png" width="20px" height="20px"></span>
+                        <span class="heart"  onclick="zwiekszSerca(${i})" "><img src="heart.png" width="20px" height="20px" id="serduszko"></span>
                         <span id="hearts-${i}">${product.serca}</span>
                     </p>
                 `;
@@ -68,6 +68,9 @@ function zwiekszSerca(index) {
         products[index].serca++;
         products[index].czySerce = true;
         document.getElementById(`hearts-${index}`).innerText = products[index].serca;
+
+        let serce12 = document.getElementById("serduszko");
+        serce12.src = "heart1.png";
     } else {
         alert("Możesz kliknąć serce tylko raz!");
     }
@@ -90,14 +93,14 @@ function moveRight() {
 
 pokazProdukt();
 function toggleText(button) {
-    const extraText = button.nextElementSibling; 
+    const extraText = button.nextElementSibling;
     if (extraText.style.display === "none") {
-        extraText.style.display = "block"; 
+        extraText.style.display = "block";
     } else {
-        extraText.style.display = "none"; 
+        extraText.style.display = "none";
     }
 }
-document.getElementById('themeToggle').addEventListener('click', function() {
+document.getElementById('themeToggle').addEventListener('click', function () {
     document.body.classList.toggle('dark-theme');
 });
 
